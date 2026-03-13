@@ -15,6 +15,11 @@ input.onGesture(Gesture.Shake, function () {
 input.onButtonPressed(Button.AB, function () {
     batata = randint(10, 30)
 })
+radio.onReceivedValue(function (name, value) {
+    if (eu == name) {
+        batata = value
+    }
+})
 let alvo = ""
 let eu = ""
 let batata = 0
